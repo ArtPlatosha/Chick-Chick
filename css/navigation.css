@@ -1,0 +1,28 @@
+.navigation__list {
+	display: flex;
+	align-items: center;
+	margin: 0; /* обязательно прописать */
+	padding: 0; /* обязательно прописать */
+	list-style: none; /* обязательно прописать */
+	gap: 32px;/* добавляет расстояние между элементами */
+}
+
+.navigation__link {
+	color: inherit;
+	text-decoration: none;
+	font-size: 14px;
+	line-height: 100%;
+	text-transform: uppercase;
+}
+
+@media (max-width: 560px) {
+	.navigation__list {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 16px;
+	}
+
+	.navigation__link {
+		font-size: 12px; 
+	}
+}

@@ -1,0 +1,131 @@
+.about {
+	padding: 62px 0;
+}
+
+.about__title {
+font-weight: 400;
+font-size: 40px;
+text-transform: uppercase;
+color: #F6F3E3;
+margin:0 0 24px;
+max-width: 700px;
+}
+
+.about__description {
+line-height: 150%;
+color: #BFBDB2;
+max-width: 700px;
+margin: 0 0 72px;
+}
+
+.about__list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(384px, 1fr));
+	gap: 24px;
+}
+
+.about__item {
+	padding: 6px 0px 6px 96px;
+	background-position: left;
+	background-repeat: no-repeat;
+	background-size: 80px;
+	min-height: 80px;
+}
+
+.about__item_top {
+	background-image: url(../img/top.svg);
+}
+
+.about__item_master {
+	background-image: url(../img/master.svg);
+}
+
+.about__item_guarantee {
+	background-image: url(../img/guarantee.svg);
+}
+
+.about__item-title {
+margin: 0 0 8px;
+font-weight: 400;
+font-size: 22px;
+text-transform: uppercase;
+color: #F6F3E3;
+}
+.about__item-decription {
+margin: 0;
+line-height: 130%;
+color: #BFBDB2;
+}
+
+@media (max-width: 1024px){
+	.about__description {
+		margin-bottom: 46px;
+	}
+
+	.about__list {
+		grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+	}
+
+	.about__item {
+		padding-top: 96px;
+		background-position: top left;
+		padding-left: 0;
+	}
+}
+
+@media (max-width: 768px){
+	.about {
+		padding: 40px 0;
+	}
+
+	.about__title {
+		margin-bottom: 24px;
+		font-size: 32px;
+	}
+
+	.about__description {
+		margin-bottom: 32px;
+	}
+
+	.about__list {
+		grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+	}
+
+	.about__item {
+		padding-left: 96px;
+		padding-top: 0;
+		background-position: top left;
+	}
+
+	.about__item-title {
+		font-size: 16px;
+	}
+}
+
+@media (max-width: 560px){
+	.about {
+		padding: 32px 0;
+	}
+
+	.about__list {
+		grid-template-columns: minmax(272px, 1fr);
+	}
+
+	.about__title {
+		font-size: 20px;
+		margin-bottom: 16px;
+	}
+
+	.about__description {
+		font-size: 12px;
+	}
+
+	.about__item {
+		padding-left: 72px;
+		min-height: 64px;
+		background-size: 64px;
+	}
+}
